@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
     <link rel="stylesheet" href="text.js">
 </head>
+
 <body>
     <h1>Customer Experience Survey</h1>
-    <label for="storeNumber">Store Number</label>
-    <select name="" id="storeNumber">
-    <option value="">3109</option>
-    <option value="">2421</option>
-    <option value="">5357</option>
-</select>
-    <fieldset>
-        <legend>When you visited</legend>
-        <label for="date">Date Visited</label>
-        <input type="date" id="date" name="datemin" min="2021-01-01" max="2021-12-31">
-        
-        <label for="time">Time</label>
-        <input type="time">
-    </fieldset>
     <form>
+        <label for="storeNumber">Store Number</label>
+        <select name="" id="storeNumber">
+            <option value="">3109</option>
+            <option value="">2421</option>
+            <option value="">5357</option>
+        </select>
+        <fieldset>
+            <legend>When you visited</legend>
+            <label for="date">Date Visited</label>
+            <input type="date" id="date" name="datemin" min="2021-01-01" max="2021-12-31">
+
+            <label for="time">Time</label>
+            <input type="time">
+        </fieldset>
+
         <label for="firstName">First Name</label>
         <input type="text" name="" id="firstName" placeholder="John">
         <label for="lastname">Last Name</label>
@@ -30,38 +33,42 @@
         <br>
         <label for="userEmail">Email</label>
         <input type="email" id="userEmail" required>
+
+        <label for="userRadio1">Male</label>
+        <input type="radio" id="userRadio1" name="radioLink">
+        <label for="userRadio2">Female</label>
+        <input type="radio" id="userRadio2" name="radioLink" checked>
+        <label for="userRadio1">Other</label>
+        <input type="radio" id="userRadio1" name="radioLink">
+        <br>
+        <label for="experience">Tell us about your experience </label>
+        <br>
+        <textarea name="" id="experience" cols="20" rows="3"></textarea>
+        <br>
+
+        <label for="number">Times visited last month:</label>
+        <input type="number" id="number" name="" min="1" max="30">
+
+        <br>
+        <label for="userCheckbox">Please check the box if you would be willing to be contacted about your
+            experience</label>
+        <input type="checkbox">
+        <br>
+        <div>
+            <label for="pass">Password</label>
+            <input type="Password" id="pass" name="pd" placeholder="Password" pattern=".{5,10}"
+                title="Please enter a password that is 5 to 10 characters in length" size=30
+                pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
+
+
+        </div>
+
+
+        <br>
+
+        <input type="reset">
+        <input type="submit">
     </form>
-    <label for="userRadio1">Male</label>
-    <input type="radio" id="userRadio1" name="radioLink">
-    <label for="userRadio2">Female</label>
-    <input type="radio" id="userRadio2" name="radioLink" checked>
-    <label for="userRadio1">Other</label>
-    <input type="radio" id="userRadio1" name="radioLink">
-<br>
-    <label for="experience">Tell us about your experience </label>
-    <br>
-<textarea name="" id="experience" cols="20" rows="3"></textarea>
-<br>
-
-<label for="number">Times visited last month:</label>
-  <input type="number" id="number" name="" min="1" max="30">
-
-<br>
-<label for="userCheckbox">Please check the box if you would be willing to be contacted about your experience</label>
-<input type="checkbox">
-<br>
-<div>
-    <label for="pass">Password</label>
-    <input type="Password" id="pass" name="pd" placeholder="Password" pattern=".{5,10}" title="Please enter a password that is 5 to 10 characters in length" size=30 pattern="[!@#$%^&*][a-z][A-Z][0-9]" required>
-
-        
-</div>
-
-
-<br>
-
-<button>Reset</button>
-<button>Submit</button>
-
 </body>
+
 </html>
